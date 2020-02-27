@@ -22,5 +22,22 @@ const getScopes = (initialEnum = []) =>
 module.exports = {
   rules: {
     "scope-enum": () => getScopes(scopes),
+    "type-enum": [
+      2,
+      "always",
+      [
+        "build",
+        "ci",
+        "chore",
+        "docs",
+        "feat",
+        "fix",
+        "perf",
+        "refactor",
+        "revert",
+        "style",
+        "test",
+      ],
+    ],
   },
 };
