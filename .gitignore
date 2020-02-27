@@ -7,3 +7,5 @@ logs
 coverage
 build
 .cache/
+
+storybook-static
