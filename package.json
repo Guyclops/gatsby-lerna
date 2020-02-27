@@ -7,7 +7,7 @@
     "init": "npm i -g lerna@3.20.2 commitizen @storybook/cli",
     "postinstall": "lerna bootstrap",
     "start": "lerna run start --parallel",
-    "build": "lerna run build --scope=@guyclops/app --stream",
+    "build": "npm postinstall && lerna run build --scope=@guyclops/app --stream",
     "clean": "rm -rf node_modules && lerna clean",
     "commit": "git-cz"
   },
