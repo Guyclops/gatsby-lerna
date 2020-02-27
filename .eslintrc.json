@@ -1,0 +1,19 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "ignorePatterns": ["node_modules/", ".ebextensions/", "build"],
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "no-var": "error",
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }]
+  }
+}

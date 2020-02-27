@@ -1,0 +1,33 @@
+{
+  "name": "guyclops-repo",
+  "author": "Guyclops",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "init": "npm i -g lerna@3.20.2 commitizen @storybook/cli",
+    "postinstall": "lerna bootstrap",
+    "start": "lerna run start --parallel",
+    "build": "lerna run build --scope=@guyclops/app --stream",
+    "clean": "rm -rf node_modules && lerna clean",
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-lerna-scopes": "^8.3.4",
+    "@commitlint/prompt": "^8.3.5",
+    "babel-loader": "^8.0.6",
+    "commitizen": "^4.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "lerna": "^3.20.2",
+    "prettier": "^1.19.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/prompt"
+    }
+  }
+}
