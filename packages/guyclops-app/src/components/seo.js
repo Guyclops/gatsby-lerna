@@ -67,13 +67,12 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `google-site-verification`,
+          content: `SmikUk4gEu-U2UMxrvzu0gWNwBUKM26IapZwHJex4YY`,
+        },
       ].concat(meta)}
-    >
-      <meta
-        name="google-site-verification"
-        content="SmikUk4gEu-U2UMxrvzu0gWNwBUKM26IapZwHJex4YY"
-      />
-    </Helmet>
+    />
   )
 }
 

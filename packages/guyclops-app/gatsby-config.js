@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Guyclops Blos`,
+    title: `Guyclops Blogs`,
     description: `Guyclops의 Gatsby 테스트 페이지 입니다.`,
     author: `@guyclops`,
+    siteUrl: `https://practical-mcnulty-6a3bf5.netlify.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,6 +28,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
