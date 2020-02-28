@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Homepage Template`,
-    description: `si homepage`,
+    title: `Guyclops Blos`,
+    description: `Guyclops의 Gatsby 테스트 페이지 입니다.`,
     author: `@guyclops`,
   },
   plugins: [
