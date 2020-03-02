@@ -52,24 +52,12 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
           name: `google-site-verification`,
           content: `SmikUk4gEu-U2UMxrvzu0gWNwBUKM26IapZwHJex4YY`,
+        },
+        {
+          name: `naver-site-verification`,
+          content: `bb4208e38c2add22a0b6ce61e258f1cbd1ac2067`,
         },
       ].concat(meta)}
     />
