@@ -29,14 +29,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-robots-txt`,
-      options: {
-        host: `https://practical-mcnulty-6a3bf5.netlify.com`,
-        sitemap: `https://practical-mcnulty-6a3bf5.netlify.com/sitemap.xml`,
-        policy: [{ userAgent: `*`, allow: `/` }],
-      },
-    },
+    `gatsby-plugin-robots-txt`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
